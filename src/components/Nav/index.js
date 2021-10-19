@@ -1,18 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { capitalizeFirstLetter } from "../../utils/helpers";
 
-function Nav() {
+function Nav(props) {
+  const { links = [], setCurrentSection, currentSection } = props;
+
+  useEffect(() => {
+    document.title = capitalizeFirstLetter(currentSection.link);
+  }, [currentSection]);
+
   return (
     // Navigation
     <nav
-      class="navbar navbar-expand-lg navbar-light fixed-top py-3"
+      className="navbar navbar-expand-lg navbar-light fixed-top py-3"
       id="mainNav"
     >
-      <div class="container px-4 px-lg-5">
-        <a class="navbar-brand" href="#page-top">
+      <div className="container px-4 px-lg-5">
+        <a className="navbar-brand" href="#page-top">
           Derimar Gray
         </a>
         <button
-          class="navbar-toggler navbar-toggler-right"
+          className="navbar-toggler navbar-toggler-right"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarResponsive"
@@ -20,30 +27,26 @@ function Nav() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ms-auto my-2 my-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">
-                About me
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">
-                Portfolio
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">
-                Contact
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#resume">
-                Resume
-              </a>
-            </li>
+        <div className="collapse navbar-collapse" id="navbarResponsive">
+          <ul className="navbar-nav ms-auto my-2 my-lg-0">
+            {links.map((Section) => (
+              <li
+                className={`nav-item ${
+                  currentSection.link === Section.link && 'active'
+                }`}
+                key={Section.link}
+              >
+                <a
+                  className="nav-link"
+                  href={`#${Section.link}`}
+                  onClick={() => setCurrentSection(Section.link)}
+                >
+                  {capitalizeFirstLetter(Section.link)}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
