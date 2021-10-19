@@ -32,16 +32,14 @@ function Nav(props) {
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <ul className="navbar-nav ms-auto my-2 my-lg-0">
             {links.map((Section) => (
-              <li
-                className={`nav-item ${
-                  currentSection.link === Section.link && 'active'
-                }`}
-                key={Section.link}
-              >
+              <li className="nav-item">
                 <a
-                  className="nav-link"
-                  href={`#${Section.link}`}
-                  onClick={() => setCurrentSection(Section.link)}
+                  className={`nav-link ${
+                    currentSection.link === Section.link && "active"
+                  }`}
+                  href="#about"
+                  key={Section.link}
+                  onClick={() => setCurrentSection(Section)}
                 >
                   {capitalizeFirstLetter(Section.link)}
                 </a>
@@ -55,3 +53,20 @@ function Nav(props) {
 }
 
 export default Nav;
+
+// {links.map((Section) => (
+//   <li
+//     className={`nav-item nav-link ${
+//       currentSection.link === Section.link && 'active'
+//     }`}
+//     key={Section.link}
+//   >
+//     <a
+//       className="nav-link"
+//       href={`#${Section.link}`}
+//       onClick={() => setCurrentSection(Section.link)}
+//     >
+//       {capitalizeFirstLetter(Section.link)}
+//     </a>
+//   </li>
+// ))}

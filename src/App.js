@@ -8,7 +8,7 @@ function App() {
   const [links] = useState([
     { link: "about me" },
     { link: "portfolio" },
-    { link: "contact me" },
+    { link: "contact" },
     { link: "resume" },
   ]);
 
