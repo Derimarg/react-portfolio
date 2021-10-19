@@ -8,7 +8,23 @@ function Contact() {
     },
   ]);
 
+  const [formState, setFormState] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const { name, email, message } = formState;
+
   const [currentSection] = useState(links[0]);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
+  const handleChange = (e) => {
+    console.log("Handle Form", formState);
+  };
 
   return (
     //  Contact
@@ -23,22 +39,19 @@ function Contact() {
               {capitalizeFirstLetter(currentSection.link)}
               <hr className="divider" />
             </h1>
-            <h2
-              className="mt-0 text-white font-weight-bold"
-              data-testid="h2tag"
+            <h3
+              className="mt-0 text-muted font-weight-bold"
+              data-testid="h3tag"
             >
               Let's Get In Touch!
-            </h2>
+            </h3>
             <hr />
-            <p className="text-muted mb-5">
-              Ready to start your next project with us? Send us a messages and
-              we will get back to you as soon as possible!
-            </p>
           </div>
+          <hr />
         </div>
         <div className="row gx-4 gx-lg-5 justify-content-center mb-5">
           <div className="col-lg-6">
-            <form id="contactForm">
+            <form id="contactForm" onSubmit={handleSubmit}>
               {/* Name input */}
               <div className="form-floating mb-3">
                 <input
@@ -46,6 +59,8 @@ function Contact() {
                   id="name"
                   type="text"
                   name="name"
+                  defaultValue={name}
+                  onBlur={handleChange}
                   placeholder="Enter your name..."
                   data-sb-validations="required"
                 />
@@ -64,6 +79,8 @@ function Contact() {
                   id="email"
                   type="email"
                   name="email"
+                  defaultValue={email}
+                  onBlur={handleChange}
                   placeholder="name@example.com"
                   data-sb-validations="required,email"
                 />
@@ -88,6 +105,8 @@ function Contact() {
                   id="message"
                   type="text"
                   name="message"
+                  defaultValue={message}
+                  onBlur={handleChange}
                   rows="5"
                   placeholder="Enter your message here..."
                   // style="height: 10rem"
