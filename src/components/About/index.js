@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
+import ProfileImg from "../../assets/img/portfolio/profile.jpeg";
 
 function About() {
   const [links] = useState([
@@ -23,7 +24,12 @@ function About() {
             </h1>
             <hr className="divider" />
           </div>
-          <div className="col-lg-8 align-self-baseline">
+          <div className="col-lg-8 align-self-baseline team-member">
+            <img
+              className=" rounded-circle mt-5"
+              src={ProfileImg}
+              alt="..."
+            />
             <p className="text-white-75 mb-5">
               I'm a Full Stack Web Developer, I Spend most of time coding
               outstanding projects. I love sharing knowledge and learn, my goal
