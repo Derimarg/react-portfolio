@@ -4,9 +4,11 @@ import { capitalizeFirstLetter } from "../../utils/helpers";
 function About() {
   const [links] = useState([
     {
-      link: "about",
+      link: "about me",
     },
   ]);
+
+  const github = [{ label: "github", url: "https://github.com/Derimarg" }];
 
   const [currentSection] = useState(links[0]);
 
@@ -22,7 +24,22 @@ function About() {
             <hr className="divider" />
           </div>
           <div className="col-lg-8 align-self-baseline">
-            <p className="text-white-75 mb-5">About</p>
+            <p className="text-white-75 mb-5">
+              I'm a Full Stack Web Developer, I Spend most of time coding
+              outstanding projects. I love sharing knowledge and learn, my goal
+              is to help other developers!
+            </p>
+            {github.map((github) => (
+              <a
+                className="btn btn-primary btn-xl"
+                href={github.url}
+                key={github.label}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Find Out More
+              </a>
+            ))}
           </div>
         </div>
       </div>
