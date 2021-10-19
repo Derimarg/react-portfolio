@@ -5,7 +5,12 @@ import Section from "./components/Section";
 import Footer from "./components/Footer";
 
 function App() {
-  const [links] = useState([{ link: "about me" }]);
+  const [links] = useState([
+    { link: "about me" },
+    { link: "portfolio" },
+    { link: "contact me" },
+    { link: "resume" },
+  ]);
 
   const [currentSection, setCurrentSection] = useState(links[0]);
   return (
