@@ -62,6 +62,7 @@
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
   --bs-body-bg: #fff;
+  --bs-button: #00316E;
 }
 
 *,
@@ -87,6 +88,25 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.icons {
+  margin: auto 30px 30px;
+  color: var(--bs-dark);
+  font-size: 2.5rem;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.icons:hover {
+  color: var(--bs-blue);
+}
+
+.footer {
+  padding: 6rem 0;
 }
 
 hr {
@@ -11319,7 +11339,7 @@ hr.divider {
   height: 0.2rem;
   max-width: 3.25rem;
   margin: 1.5rem auto;
-  background-color: #f4623a;
+  background-color: var(--bs-button);
   opacity: 1;
 }
 
