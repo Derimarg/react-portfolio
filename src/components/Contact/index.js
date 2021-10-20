@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { capitalizeFirstLetter } from "../../utils/helpers";
-import { validateEmail } from "../../utils/helpers";
+import { capitalizeFirstLetter, validateEmail } from "../../utils/helpers";
 
 function Contact() {
   const [links] = useState([
@@ -11,11 +10,7 @@ function Contact() {
 
   const [currentSection] = useState(links[0]);
 
-  const [formState, setFormState] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const [formState, setFormState] = useState({ name: '', email: '', message: '' });
 
   const [errorMessage, setErrorMessage] = useState("");
   const { name, email, message } = formState;
@@ -124,7 +119,7 @@ function Contact() {
               <div className="d-grid">
                 <button
                   data-testid="button"
-                  className="btn btn-primary btn-xl disabled"
+                  className="btn btn-primary btn-xl"
                   id="submitButton"
                   type="submit"
                 >

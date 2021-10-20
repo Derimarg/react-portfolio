@@ -37,8 +37,8 @@ function Resume() {
           ))}
         </div>
       </div>
-      <ResumeInfo></ResumeInfo>
-      <Proficiencies></Proficiencies>
+      <ResumeInfo/>
+      <Proficiencies/>
     </section>
   );
 }
