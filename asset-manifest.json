@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.cd5f9651.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.cd5f9651.chunk.js.map",
+    "runtime-main.js": "/react-portfolio/static/js/runtime-main.73549604.js",
+    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.73549604.js.map",
+    "static/js/2.f857bdfe.chunk.js": "/react-portfolio/static/js/2.f857bdfe.chunk.js",
+    "static/js/2.f857bdfe.chunk.js.map": "/react-portfolio/static/js/2.f857bdfe.chunk.js.map",
+    "static/js/3.e235c5bc.chunk.js": "/react-portfolio/static/js/3.e235c5bc.chunk.js",
+    "static/js/3.e235c5bc.chunk.js.map": "/react-portfolio/static/js/3.e235c5bc.chunk.js.map",
+    "index.html": "/react-portfolio/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/react-portfolio/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.f857bdfe.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.f857bdfe.chunk.js.LICENSE.txt",
+    "static/media/dark.jpg": "/react-portfolio/static/media/dark.14949826.jpg",
+    "static/media/forge-project.jpg": "/react-portfolio/static/media/forge-project.f6a883ed.jpg",
+    "static/media/gallery.jpg": "/react-portfolio/static/media/gallery.b96861fe.jpg",
+    "static/media/git-it-done.jpg": "/react-portfolio/static/media/git-it-done.14a996a4.jpg",
+    "static/media/homepage.jpg": "/react-portfolio/static/media/homepage.e3c33ff1.jpg",
+    "static/media/horiseon.jpg": "/react-portfolio/static/media/horiseon.0dd50bbf.jpg",
+    "static/media/hub.jpg": "/react-portfolio/static/media/hub.f70d5ebe.jpg",
+    "static/media/just-tech-news.jpg": "/react-portfolio/static/media/just-tech-news.c1e81afe.jpg",
+    "static/media/led.jpg": "/react-portfolio/static/media/led.ff514043.jpg",
+    "static/media/note-taker.jpg": "/react-portfolio/static/media/note-taker.71f04205.jpg",
+    "static/media/password-generator.jpg": "/react-portfolio/static/media/password-generator.0517f995.jpg",
+    "static/media/pexels-neo.jpg": "/react-portfolio/static/media/pexels-neo.026b6637.jpg",
+    "static/media/profile.jpg": "/react-portfolio/static/media/profile.0c6d8f09.jpg",
+    "static/media/profile.838a5ad7.jpeg": "/react-portfolio/static/media/profile.838a5ad7.jpeg",
+    "static/media/run-buddy.jpg": "/react-portfolio/static/media/run-buddy.74366f17.jpg",
+    "static/media/taskinator.jpg": "/react-portfolio/static/media/taskinator.13749c7d.jpg",
+    "static/media/taskmaster-pro.jpg": "/react-portfolio/static/media/taskmaster-pro.c021bcd5.jpg",
+    "static/media/tech-blog.jpg": "/react-portfolio/static/media/tech-blog.aeb39690.jpg",
+    "static/media/weather-dashboard.jpg": "/react-portfolio/static/media/weather-dashboard.5f988565.jpg",
+    "static/media/work-day-scheduler.jpg": "/react-portfolio/static/media/work-day-scheduler.9fe2ffd5.jpg",
+    "static/media/zoo-keepr.jpg": "/react-portfolio/static/media/zoo-keepr.10eeafbe.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.73549604.js",
+    "static/js/2.f857bdfe.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.cd5f9651.chunk.js"
+  ]
+}
