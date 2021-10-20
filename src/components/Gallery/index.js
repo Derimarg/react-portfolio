@@ -2,45 +2,44 @@ import React from "react";
 import { removeHyphensAndCapitalize } from "../../utils/helpers";
 
 function Gallery({ project }) {
-  const { name, description, repo, link } = project;
+  const { name, filter, description, link, repo } = project;
 
   return (
-    <div class="col-lg-4 col-sm-6" >
-      <a
-        class="portfolio-box"
-        href={require(`../../assets/img/portfolio/${name}.jpg`)}
-        title={removeHyphensAndCapitalize(name)}
-        
-      >
+
+    <div className={`col-lg-4 col-md-6 portfolio-item filter-${filter}`}>
+      <div className="portfolio-wrap shadow-lg p-3 mb-5 bg-white" key={name}>
         <img
-          class="img-fluid"
-          src={require(`../../assets/img/portfolio/${name}.jpg`)}
+          src={require(`../../assets/img/portfolio/${name}.jpg`).default}
+          className="img-fluid"
           alt={removeHyphensAndCapitalize(name)}
         />
-        <div class="portfolio-box-caption">
-          <div class="project-name">{removeHyphensAndCapitalize(name)}</div>
-          <div class="project-name">
+        <div className="portfolio-info p-info">
+          <h4>{removeHyphensAndCapitalize(name)}</h4>
+          <p>{description}</p>
+          <div className="portfolio-links">
             <a
-              href={link}
-              className="project-category text-faded"
+              href={repo}
+              data-gallery="portfolioGallery"
+              className="portfolio-lightbox"
+              title="Repository Link"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Live Demo
+              <i className="fab fa-github"></i>
+            </a>
+            <a
+              href={link}
+              className="portfolio-details-lightbox"
+              data-glightbox="type: external"
+              title="View Demo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fas fa-external-link-alt"></i>
             </a>
           </div>
-          <a
-            href={repo}
-            className="project-category text-faded"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fab fa-github"></i>
-          </a>
-
-          <div class="project-category text-white-50">{description}</div>
         </div>
-      </a>
+      </div>
     </div>
   );
 }
