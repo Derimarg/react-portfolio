@@ -9,7 +9,6 @@ function Nav(props) {
   }, [currentSection]);
 
   return (
-    // Navigation
     <nav
       className="navbar navbar-expand-lg navbar-light fixed-top py-3"
       id="mainNav"
@@ -53,20 +52,3 @@ function Nav(props) {
 }
 
 export default Nav;
-
-// {links.map((Section) => (
-//   <li
-//     className={`nav-item nav-link ${
-//       currentSection.link === Section.link && 'active'
-//     }`}
-//     key={Section.link}
-//   >
-//     <a
-//       className="nav-link"
-//       href={`#${Section.link}`}
-//       onClick={() => setCurrentSection(Section.link)}
-//     >
-//       {capitalizeFirstLetter(Section.link)}
-//     </a>
-//   </li>
-// ))}

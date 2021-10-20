@@ -17,7 +17,6 @@ function Resume() {
   const [currentSection] = useState(links[0]);
 
   return (
-    //  Call resume
     <section>
       <div className="page-section bg-dark text-white">
         <div class="container px-4 px-lg-5 text-center">
@@ -25,7 +24,6 @@ function Resume() {
             {capitalizeFirstLetter(currentSection.link)}
           </h1>
           <hr className="divider mb-5" />
-          {/* <h2 class="mb-4">Download my Resume</h2> */}
           {googleDrive.map((drive) => (
             <a
               className="btn btn-light btn-xl mb-none"
@@ -33,7 +31,7 @@ function Resume() {
               key={drive.label}
               rel="noopener noreferrer"
             >
-              <i className={drive.icon} style={{ fontSize: 20 }}></i>{" "}
+              <i className={drive.icon} style={{ fontSize: 20 }}></i>
               <span style={{ fontSize: 18, marginLeft: 15 }}>Download!</span>
             </a>
           ))}

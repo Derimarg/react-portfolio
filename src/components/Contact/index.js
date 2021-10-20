@@ -50,7 +50,7 @@ function Contact() {
   };
 
   return (
-    //  Contact
+
     <section className="page-section bg-dark" id="contact">
       <div className="container px-4 px-lg-5">
         <div className="row gx-4 gx-lg-5 justify-content-center">
@@ -75,7 +75,7 @@ function Contact() {
         <div className="row gx-4 gx-lg-5 justify-content-center mb-5">
           <div className="col-lg-6">
             <form id="contactForm" onSubmit={handleSubmit}>
-              {/* Name input */}
+              
               <div className="form-floating mb-3">
                 <input
                   className="form-control"
@@ -87,7 +87,7 @@ function Contact() {
                 />
                 <label htmlFor="name">Full name</label>
               </div>
-              {/* Email address input */}
+              
               <div className="form-floating mb-3">
                 <input
                   className="form-control"
@@ -99,7 +99,7 @@ function Contact() {
                 />
                 <label htmlFor="email">Email address</label>
               </div>
-              {/* Message input */}
+              
               <div className="form-floating mb-3">
                 <textarea
                   className="form-control"
@@ -112,7 +112,7 @@ function Contact() {
                 ></textarea>
                 <label htmlFor="message">Message</label>
               </div>
-              {/* Submit error message */}
+              
               {errorMessage && (
                 <div id="submitErrorMessage">
                   <div className="text-center text-danger mb-3">
@@ -120,7 +120,7 @@ function Contact() {
                   </div>
                 </div>
               )}
-              {/* Submit Button */}
+              
               <div className="d-grid">
                 <button
                   data-testid="button"

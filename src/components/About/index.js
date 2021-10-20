@@ -14,7 +14,6 @@ function About() {
   const [currentSection] = useState(links[0]);
 
   return (
-    // Masthead
     <header className="masthead">
       <div className="container px-4 px-lg-5 h-100">
         <div className="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
@@ -28,7 +27,7 @@ function About() {
             <img
               className=" rounded-circle mt-5"
               src={ProfileImg}
-              alt="..."
+              alt="Profile avatar"
             />
             <p className="text-white-75 mb-5">
               I'm a Full Stack Web Developer, I Spend most of time coding

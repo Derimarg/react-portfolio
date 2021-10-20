@@ -103,8 +103,8 @@ function Portfolio() {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            {projects.map((project, idx) => (
-              <Gallery project={project} key={"project" + idx} />
+            {projects.map((project, id) => (
+              <Gallery project={project} key={"project" + id} />
             ))}
           </div>
         </div>

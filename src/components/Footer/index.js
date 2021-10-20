@@ -18,7 +18,7 @@ function Footer() {
 
 
   return (
-    // Footer
+    
     <footer className="footer">
       <div className="container px-4 px-lg-5">
         <div className=" text-center text-muted">
