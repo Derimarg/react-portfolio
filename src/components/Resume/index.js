@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ResumeInfo from "../ResumeInfo";
+import Proficiencies from "../Proficiencies";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Resume() {
@@ -23,11 +24,11 @@ function Resume() {
           <h1 className="text-white font-weight-bold">
             {capitalizeFirstLetter(currentSection.link)}
           </h1>
-          <hr className="divider" />
-          <h2 class="mb-4">Download my Resume</h2>
+          <hr className="divider mb-5" />
+          {/* <h2 class="mb-4">Download my Resume</h2> */}
           {googleDrive.map((drive) => (
             <a
-              className="btn btn-light btn-xl"
+              className="btn btn-light btn-xl mb-none"
               href={drive.url}
               key={drive.label}
               rel="noopener noreferrer"
@@ -38,8 +39,8 @@ function Resume() {
           ))}
         </div>
       </div>
-      {/* Resume Info */}
       <ResumeInfo></ResumeInfo>
+      <Proficiencies></Proficiencies>
     </section>
   );
 }
