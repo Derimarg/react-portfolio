@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// import emailjs from "emailjs-com";
 import { capitalizeFirstLetter, validateEmail } from "../../utils/helpers";
 
 function Contact() {
@@ -10,7 +11,12 @@ function Contact() {
 
   const [currentSection] = useState(links[0]);
 
-  const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+  const [formState, setFormState] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
 
   const [errorMessage, setErrorMessage] = useState("");
   const { name, email, message } = formState;
@@ -45,7 +51,6 @@ function Contact() {
   };
 
   return (
-
     <section className="page-section bg-dark" id="contact">
       <div className="container px-4 px-lg-5">
         <div className="row gx-4 gx-lg-5 justify-content-center">
@@ -70,7 +75,6 @@ function Contact() {
         <div className="row gx-4 gx-lg-5 justify-content-center mb-5">
           <div className="col-lg-6">
             <form id="contactForm" onSubmit={handleSubmit}>
-              
               <div className="form-floating mb-3">
                 <input
                   className="form-control"
@@ -82,7 +86,7 @@ function Contact() {
                 />
                 <label htmlFor="name">Full name</label>
               </div>
-              
+
               <div className="form-floating mb-3">
                 <input
                   className="form-control"
@@ -94,7 +98,7 @@ function Contact() {
                 />
                 <label htmlFor="email">Email address</label>
               </div>
-              
+
               <div className="form-floating mb-3">
                 <textarea
                   className="form-control"
@@ -107,7 +111,7 @@ function Contact() {
                 ></textarea>
                 <label htmlFor="message">Message</label>
               </div>
-              
+
               {errorMessage && (
                 <div id="submitErrorMessage">
                   <div className="text-center text-danger mb-3">
@@ -115,7 +119,7 @@ function Contact() {
                   </div>
                 </div>
               )}
-              
+
               <div className="d-grid">
                 <button
                   data-testid="button"
