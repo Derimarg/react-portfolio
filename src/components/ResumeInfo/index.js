@@ -30,6 +30,15 @@ function ResumeInfo() {
             
           </div>
         </div>
+        <div className="col-lg-4 col-md-6 text-center">
+          <div className="mt-5">
+            <di className="mb-2">
+              <i className="far fa-heart mb-3 r-icons"></i>
+            </di>
+            <h3 className="h4 mb-2">Made with love</h3>
+            
+          </div>
+        </div>
       </div>
     </div>
   );

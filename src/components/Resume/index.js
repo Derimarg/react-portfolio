@@ -19,7 +19,7 @@ function Resume() {
   return (
     <section>
       <div className="page-section bg-dark text-white">
-        <div class="container px-4 px-lg-5 text-center">
+        <div className="container px-4 px-lg-5 text-center">
           <h1 className="text-white font-weight-bold">
             {capitalizeFirstLetter(currentSection.link)}
           </h1>

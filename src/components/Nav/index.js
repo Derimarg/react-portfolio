@@ -31,7 +31,7 @@ function Nav(props) {
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <ul className="navbar-nav ms-auto my-2 my-lg-0">
             {links.map((Section) => (
-              <li className="nav-item">
+              <li className="nav-item" key={Section.link}>
                 <a
                   className={`nav-link ${
                     currentSection.link === Section.link && "active"
