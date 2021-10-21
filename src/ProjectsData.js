@@ -27,13 +27,13 @@ export default [
     link: "https://derimarg.github.io/run-buddy/",
     repo: "https://github.com/Derimarg/run-buddy",
   },
-  // {
-  //   name: "just-tech-news",
-  //   filter: "card",
-  //   description: "Node/MySQL/Sequalize",
-  //   link: "https://just-tech-news-dapp.herokuapp.com/",
-  //   repo: "https://github.com/Derimarg/just-tech-news",
-  // },
+  {
+    name: "just-tech-news",
+    filter: "card",
+    description: "Node/MySQL/Sequalize",
+    link: "https://just-tech-news-dapp.herokuapp.com/",
+    repo: "https://github.com/Derimarg/just-tech-news",
+  },
   {
     name: "note-taker",
     filter: "app",
