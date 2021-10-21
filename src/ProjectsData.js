@@ -1,4 +1,4 @@
-export default [
+var data =  [
   {
     name: "forge-project",
     filter: "web",
@@ -71,3 +71,5 @@ export default [
     repo: "https://github.com/Derimarg/password-generator",
   },
 ];
+
+export default data;
