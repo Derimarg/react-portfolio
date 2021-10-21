@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-// import emailjs from "emailjs-com";
+import React, { useState, useRef } from "react";
+import emailjs from "emailjs-com";
 import { capitalizeFirstLetter, validateEmail } from "../../utils/helpers";
 
 function Contact() {
@@ -19,15 +19,7 @@ function Contact() {
   });
 
   const [errorMessage, setErrorMessage] = useState("");
-  const { name, email, message } = formState;
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    if (!errorMessage) {
-      console.log("Submit Form", formState);
-    }
-  };
+  const { name, email, subject, message } = formState;
 
   const handleChange = (e) => {
     if (e.target.name === "email") {
@@ -49,6 +41,32 @@ function Contact() {
       console.log("Handle Form", formState);
     }
   };
+
+  const form = useRef();
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_ztht0tl",
+        "template_bebrtdg",
+        form.current,
+        "user_ZqoXtIt7uzOc1O05qKbej"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setErrorMessage("Message sent!");
+        },
+        (error) => {
+          console.log(error.text);
+          setErrorMessage(
+            "Your message couldn't be sent. Please email directly at derimargray@gmail.com"
+          );
+        }
+      );
+  }
 
   return (
     <section className="page-section bg-dark" id="contact">
@@ -74,7 +92,7 @@ function Contact() {
         </div>
         <div className="row gx-4 gx-lg-5 justify-content-center mb-5">
           <div className="col-lg-6">
-            <form id="contactForm" onSubmit={handleSubmit}>
+            <form id="contactForm" ref={form} onSubmit={sendEmail}>
               <div className="form-floating mb-3">
                 <input
                   className="form-control"
@@ -82,9 +100,22 @@ function Contact() {
                   type="text"
                   name="name"
                   defaultValue={name}
+                  placeholder="Frank Smith"
                   onBlur={handleChange}
                 />
                 <label htmlFor="name">Full name</label>
+              </div>
+
+              <div className="form-floating mb-3">
+                <input
+                  className="form-control"
+                  id="subject"
+                  type="subject"
+                  name="subject"
+                  defaultValue={subject}
+                  onBlur={handleChange}
+                />
+                <label htmlFor="subject">Subject</label>
               </div>
 
               <div className="form-floating mb-3">
@@ -94,11 +125,11 @@ function Contact() {
                   type="email"
                   name="email"
                   defaultValue={email}
+                  placeholder="frankSmith@gmail.com"
                   onBlur={handleChange}
                 />
                 <label htmlFor="email">Email address</label>
               </div>
-
               <div className="form-floating mb-3">
                 <textarea
                   className="form-control"
@@ -137,5 +168,4 @@ function Contact() {
     </section>
   );
 }
-
 export default Contact;
