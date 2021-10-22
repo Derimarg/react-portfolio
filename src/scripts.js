@@ -1,6 +1,34 @@
 // var bootstrap;
 // var SimpleLightbox;
 window.addEventListener("DOMContentLoaded", (event) => {
+  
+//   window.addEventListener('scroll', function() {
+//     if (window.scrollY > 50) {
+//       document.getElementById('navbar-top').classList.add('fixed-top');
+//       // add padding top to show content behind navbar
+//       navbarHeight = document.querySelector('.navbar').offsetHeight;
+//       document.body.style.paddingTop = navbarHeight + 'px';
+//     } else {
+//       document.getElementById('navbar-top').classList.remove('fixed-top');
+//        // remove padding top from body
+//       document.body.style.paddingTop = '0';
+//     } 
+// });
+
+// var requiredTopPosition = document.getElementById('siteHeader'),
+//     siteNav = document.getElementById('mainNav');
+
+//     window.onscroll = function() {
+        // if ( siteNav.offsetTop < document.documentElement.scrollTop + 26 || siteNav.offsetTop < document.body.scrollTop + 26) {
+        //     siteHeader.setAttribute("class","sticky");
+        // }
+        // else {
+        //     siteHeader.setAttribute("class","");
+        // }
+        // siteNav.offsetTop < (document.documentElement.scrollTop || document.body.scrollTop) + requiredTopPosition ? "sticky" : "";
+    // }
+
+
   // Navbar shrink function
   var navbarShrink = function () {
     const navbarCollapsible = document.body.querySelector("#mainNav");
