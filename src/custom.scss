@@ -1,0 +1,21 @@
+/* make the customizations */
+// scss-docs-start colors-map
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  "primary":    #2f99b3,
+//   "secondary":  $secondary,
+//   "success":    $success,
+//   "info":       $info,
+//   "warning":    $warning,
+//   "danger":     $danger,
+//   "light":      $light,
+//   "dark":       $dark
+) !default
+
+
+$navbar-light-color:(#212529)!default;
+$navbar-light-hover-color:(#0d6efd)!default;
+$navbar-light-hover-color:(#2f99b3)!default;
+$navbar-light-active-color:(#2f99b3)!default;
+
+@import "~bootstrap/scss/bootstrap";

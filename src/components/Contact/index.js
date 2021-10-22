@@ -80,6 +80,7 @@ function Contact() {
               {capitalizeFirstLetter(currentSection.link)}
               <hr className="divider" />
             </h1>
+            <div className="page-skill bg-dark" id="contact"></div>
             <h3
               className="mt-0 text-muted font-weight-bold"
               data-testid="h3tag"

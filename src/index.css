@@ -11989,6 +11989,22 @@ body {
   padding: 8rem 0;
 }
 
+@media (min-width: 576px) {
+  /* .page-section {
+    padding: 18rem 0; }*/
+
+  .fixed-top {
+    position: relative; /* this can also be static */
+  }
+}
+
+/* @media (min-width: 768px) {
+  /* .fixed-top {
+    position: relative; /* this can also be static 
+  }
+}  */
+
+
 .page-skill {
   padding: 5rem 0;
 }

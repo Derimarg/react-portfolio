@@ -1,8 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import 'bootstrap/dist/css/bootstrap.css';
-// import "../src/scripts.js";
+import "../src/scripts.js";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import * as serviceWorker from "./serviceWorker";
