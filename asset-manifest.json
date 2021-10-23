@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.c9b0ba69.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.a991a334.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.a991a334.chunk.js.map",
-    "runtime-main.js": "/react-portfolio/static/js/runtime-main.18f1ba08.js",
-    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.18f1ba08.js.map",
-    "static/js/2.362eee3c.chunk.js": "/react-portfolio/static/js/2.362eee3c.chunk.js",
-    "static/js/2.362eee3c.chunk.js.map": "/react-portfolio/static/js/2.362eee3c.chunk.js.map",
-    "static/js/3.3025fc51.chunk.js": "/react-portfolio/static/js/3.3025fc51.chunk.js",
-    "static/js/3.3025fc51.chunk.js.map": "/react-portfolio/static/js/3.3025fc51.chunk.js.map",
+    "main.js": "/react-portfolio/static/js/main.22dbfa32.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.22dbfa32.chunk.js.map",
+    "runtime-main.js": "/react-portfolio/static/js/runtime-main.0fedc67c.js",
+    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.0fedc67c.js.map",
+    "static/js/2.46bac0bb.chunk.js": "/react-portfolio/static/js/2.46bac0bb.chunk.js",
+    "static/js/2.46bac0bb.chunk.js.map": "/react-portfolio/static/js/2.46bac0bb.chunk.js.map",
+    "static/js/3.7d39a589.chunk.js": "/react-portfolio/static/js/3.7d39a589.chunk.js",
+    "static/js/3.7d39a589.chunk.js.map": "/react-portfolio/static/js/3.7d39a589.chunk.js.map",
     "index.html": "/react-portfolio/index.html",
     "static/css/main.c9b0ba69.chunk.css.map": "/react-portfolio/static/css/main.c9b0ba69.chunk.css.map",
-    "static/js/2.362eee3c.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.362eee3c.chunk.js.LICENSE.txt",
+    "static/js/2.46bac0bb.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.46bac0bb.chunk.js.LICENSE.txt",
     "static/media/index.css": "/react-portfolio/static/media/bg-masthead.f16c2ada.jpg",
     "static/media/dark.jpg": "/react-portfolio/static/media/dark.14949826.jpg",
     "static/media/forge-project.jpg": "/react-portfolio/static/media/forge-project.f6a883ed.jpg",
@@ -36,9 +36,9 @@
     "static/media/zoo-keepr.jpg": "/react-portfolio/static/media/zoo-keepr.10eeafbe.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.18f1ba08.js",
-    "static/js/2.362eee3c.chunk.js",
+    "static/js/runtime-main.0fedc67c.js",
+    "static/js/2.46bac0bb.chunk.js",
     "static/css/main.c9b0ba69.chunk.css",
-    "static/js/main.a991a334.chunk.js"
+    "static/js/main.22dbfa32.chunk.js"
   ]
 }
