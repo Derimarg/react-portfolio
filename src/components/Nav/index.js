@@ -1,13 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { capitalizeFirstLetter } from "../../utils/helpers";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
-function Nav(props) {
-  const { links = [], setCurrentSection, currentSection } = props;
-
-  useEffect(() => {
-    document.title = capitalizeFirstLetter(currentSection.link);
-  }, [currentSection]);
-
+function Nav() {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
 
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
@@ -29,27 +23,44 @@ function Nav(props) {
           aria-controls="navbarResponsive"
           // aria-expanded="false"
           // aria-label="Toggle navigation"
-          aria-expanded={!isNavCollapsed ? true : false} aria-label="Toggle navigation" onClick={handleNavCollapse}
+          aria-expanded={!isNavCollapsed ? true : false}
+          aria-label="Toggle navigation"
+          onClick={handleNavCollapse}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        {/* <div className="collapse navbar-collapse" id="navbarResponsive"> */}
-        <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarResponsive">
+        <div
+          className={`${isNavCollapsed ? "collapse" : ""} navbar-collapse`}
+          id="navbarResponsive"
+        >
           <ul className="navbar-nav ms-auto my-2 my-lg-0">
-            {links.map((Section) => (
-              <li className="nav-item" key={Section.link}>
-                <a
-                  className={`nav-link ${
-                    currentSection.link === Section.link && "active"
-                  }`}
-                  href="#about"
-                  key={Section.link}
-                  onClick={() => setCurrentSection(Section)}
-                >
-                  {capitalizeFirstLetter(Section.link)}
-                </a>
-              </li>
-            ))}
+            <Link
+              className="nav-item"
+              to="/"
+            >
+              About me
+            </Link>
+            <Link
+              className="nav-item"
+              activeClassName="selected"
+              to="/portfolio"
+            >
+              Portfolio
+            </Link>
+            <Link
+              className="nav-item"
+              
+              to="/contact"
+            >
+              Contact
+            </Link>
+            <Link
+              className="nav-item"
+              activeClassName="navbar__link--active"
+              to="/resume"
+            >
+              Resume
+            </Link>
           </ul>
         </div>
       </div>
