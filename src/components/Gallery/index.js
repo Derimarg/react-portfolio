@@ -2,12 +2,12 @@ import React from "react";
 import { removeHyphensAndCapitalize } from "../../utils/helpers";
 
 function Gallery({ project }) {
-  const { name, filter, description, link, repo } = project;
+  const { id, name, filter, description, link, repo } = project;
 
   return (
 
     <div className={`col-lg-4 col-md-6 portfolio-item filter-${filter}`}>
-      <div className="portfolio-wrap shadow-lg p-3 mb-5 bg-white" key={name}>
+      <div className="portfolio-wrap shadow-lg p-3 mb-5 bg-white" key={id}>
         <img
           src={require(`../../assets/img/portfolio/${name}.jpg`).default}
           className="img-fluid"

@@ -16,10 +16,9 @@ function Footer() {
     },
   ];
 
-
   return (
     
-    <footer className="footer">
+    <footer className="footer shadow-lg">
       <div className="container px-4 px-lg-5">
         <div className=" text-center text-muted">
           {icons.map((icon) => (
@@ -34,7 +33,7 @@ function Footer() {
           ))}
         </div>
         <div className="small text-center text-muted">
-          &copy; 2021 - Derimar Gray
+          &copy; {new Date().getFullYear()} - Derimar Gray
         </div>
       </div>
     </footer>

@@ -102,10 +102,15 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-nav {
-	position:sticky;
-	top:0;
-}
+#footer-area{
+  -webkit-box-shadow: 0px -4px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px -4px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px -4px 5px 0px rgba(0,0,0,0.75);
+  }
+
+.nav-colored { background-color:#000; }
+.nav-transparent { background-color:transparent;}
+
 
 .p-info {
   background: rgba(255, 255, 255, 0.3);
@@ -11996,9 +12001,9 @@ body {
 
 @media (min-width: 576px) {
   
-   .fixed-top {
+   /* .fixed-top {
     position: relative; 
-   }  
+   }   */
 }
 
 .page-skill {
@@ -12063,15 +12068,15 @@ hr.divider-light {
     box-shadow: none;
     background-color: transparent;
   }
-  /* #mainNav .navbar-brand {
+  #mainNav .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
-  } */
+  }
   #mainNav .navbar-brand:hover {
     /* color: #fff; */
     color: #0d6efd;
   }
    #mainNav .navbar-nav .nav-item .nav-link {
-    /*color: rgba(255, 255, 255, 0.7);*/
+    color: rgba(255, 255, 255, 0.7);
 
     padding: 0 1rem;
   } 

@@ -1,33 +1,5 @@
-// var bootstrap;
-// var SimpleLightbox;
+
 window.addEventListener("DOMContentLoaded", (event) => {
-  
-//   window.addEventListener('scroll', function() {
-//     if (window.scrollY > 50) {
-//       document.getElementById('navbar-top').classList.add('fixed-top');
-//       // add padding top to show content behind navbar
-//       navbarHeight = document.querySelector('.navbar').offsetHeight;
-//       document.body.style.paddingTop = navbarHeight + 'px';
-//     } else {
-//       document.getElementById('navbar-top').classList.remove('fixed-top');
-//        // remove padding top from body
-//       document.body.style.paddingTop = '0';
-//     } 
-// });
-
-// var requiredTopPosition = document.getElementById('siteHeader'),
-//     siteNav = document.getElementById('mainNav');
-
-//     window.onscroll = function() {
-        // if ( siteNav.offsetTop < document.documentElement.scrollTop + 26 || siteNav.offsetTop < document.body.scrollTop + 26) {
-        //     siteHeader.setAttribute("class","sticky");
-        // }
-        // else {
-        //     siteHeader.setAttribute("class","");
-        // }
-        // siteNav.offsetTop < (document.documentElement.scrollTop || document.body.scrollTop) + requiredTopPosition ? "sticky" : "";
-    // }
-
 
   // Navbar shrink function
   var navbarShrink = function () {
@@ -58,22 +30,36 @@ window.addEventListener("DOMContentLoaded", (event) => {
   // }
 
   // Collapse responsive navbar when toggler is visible
-  // const navbarToggler = document.body.querySelector(".navbar-toggler");
-  // const responsiveNavItems = [].slice.call(
-  //   document.querySelectorAll("#navbarResponsive .nav-link")
-  // );
+  const navbarToggler = document.body.querySelector(".navbar-toggler");
+  const responsiveNavItems = [].slice.call(
+    document.querySelectorAll("#navbarResponsive .nav-link")
+  );
 
-//  responsiveNavItems.map(function (responsiveNavItem) {
-//     responsiveNavItem.addEventListener("click", () => {
-//       if (window.getComputedStyle(navbarToggler).display !== "none") {
-//         navbarToggler.click();
-//       }
-//     });
-//   });
+  // eslint-disable-next-line
+   responsiveNavItems.map(function (responsiveNavItem) {
+      responsiveNavItem.addEventListener("click", () => {
+        if (window.getComputedStyle(navbarToggler).display !== "none") {
+          navbarToggler.click();
+        }
+
+      });
+    });
 
   // Activate SimpleLightbox plugin for portfolio items
 
   // new SimpleLightbox({
   //   elements: "#portfolio a.portfolio-box",
   // });
+
+  var myNav = document.getElementById("mainNav");
+  window.onscroll = function () {
+    // "use strict";
+    if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200 ) {
+      myNav.classList.add("nav-colored");
+      myNav.classList.remove("nav-transparent");
+    } else {
+      myNav.classList.add("nav-transparent");
+      myNav.classList.remove("nav-colored");
+    }
+  };
 });
