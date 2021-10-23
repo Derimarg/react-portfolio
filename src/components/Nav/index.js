@@ -1,10 +1,20 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 
 function Nav() {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
 
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
+
+  const [aboutActive, setAboutActive] = useState(false);
+
+  let location = useLocation();
+
+  useEffect(() => {
+    if ("/react-portfolio" || "/") {
+      setAboutActive(true);
+    }
+  }, [location]);
 
   return (
     <nav
@@ -35,7 +45,8 @@ function Nav() {
             <li className="nav-item">
               <NavLink
                 activeClassName="active"
-                className="nav-link"
+                className={`${aboutActive ? "nav-link" : ""} active`}
+                // className="nav-link"
                 to="/about"
               >
                 About
