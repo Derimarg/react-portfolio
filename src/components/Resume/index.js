@@ -17,29 +17,31 @@ function Resume() {
   const [currentSection] = useState(links[0]);
 
   return (
-    <section>
-      <div className="page-section bg-dark text-white">
-        <div className="container px-4 px-lg-5 text-center">
-          <h1 className="text-white font-weight-bold">
-            {capitalizeFirstLetter(currentSection.link)}
-          </h1>
-          <hr className="divider mb-5" />
-          {googleDrive.map((drive) => (
-            <a
-              className="btn btn-light btn-xl mb-none"
-              href={drive.url}
-              key={drive.label}
-              rel="noopener noreferrer"
-            >
-              <i className={drive.icon} style={{ fontSize: 20 }}></i>
-              <span style={{ fontSize: 18, marginLeft: 15 }}>Download!</span>
-            </a>
-          ))}
+    <React.Fragment>
+      <section>
+        <div className="page-section bg-dark text-white">
+          <div className="container px-4 px-lg-5 text-center">
+            <h1 className="text-white font-weight-bold">
+              {capitalizeFirstLetter(currentSection.link)}
+            </h1>
+            <hr className="divider mb-5" />
+            {googleDrive.map((drive) => (
+              <a
+                className="btn btn-light btn-xl mb-none"
+                href={drive.url}
+                key={drive.label}
+                rel="noopener noreferrer"
+              >
+                <i className={drive.icon} style={{ fontSize: 20 }}></i>
+                <span style={{ fontSize: 18, marginLeft: 15 }}>Download!</span>
+              </a>
+            ))}
+          </div>
         </div>
-      </div>
-      <ResumeInfo/>
-      <Proficiencies/>
-    </section>
+        <ResumeInfo />
+        <Proficiencies />
+      </section>
+    </React.Fragment>
   );
 }
 

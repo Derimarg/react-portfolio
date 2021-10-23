@@ -12,7 +12,7 @@ function Nav() {
       id="mainNav"
     >
       <div className="container px-4 px-lg-5">
-        <NavLink className="navbar-brand" to="/">
+        <NavLink className="navbar-brand" to="/about">
           Derimar Gray
         </NavLink>
         <button
@@ -34,7 +34,6 @@ function Nav() {
           <ul className="navbar-nav ms-auto my-2 my-lg-0">
             <li className="nav-item">
               <NavLink
-                exact
                 activeClassName="active"
                 className="nav-link"
                 to="/about"
