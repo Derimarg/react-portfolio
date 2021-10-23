@@ -27,7 +27,9 @@ function Portfolio() {
             <hr className="divider" />
           </div>
         </div>
-
+        <div className="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center m-5 text-center">
+          <h2 className="m-3">Projects Gallery</h2>
+        </div>
         <div id="portfolio" className="portfolio section-bg">
           <div className="container mt-4" data-aos="fade-up">
             <div

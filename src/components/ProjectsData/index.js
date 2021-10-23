@@ -57,7 +57,7 @@ var data = [
   },
 
   {
-    id: "7",
+    id: "8",
     name: "weather-dashboard",
     filter: "app",
     description: "JavaScript/API/Bootstrap",
@@ -65,7 +65,7 @@ var data = [
     repo: "https://github.com/Derimarg/weather-dashboard",
   },
   {
-    id: "8",
+    id: "9",
     name: "tech-blog",
     filter: "card",
     description: "Node/MySQL/Sequalize",
@@ -73,7 +73,7 @@ var data = [
     repo: "https://github.com/Derimarg/tech-blog",
   },
   {
-    id: "9",
+    id: "10",
     name: "password-generator",
     filter: "app",
     description: "HTML/CSS/JavaScript",

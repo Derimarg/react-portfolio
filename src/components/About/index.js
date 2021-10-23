@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 import ProfileImg from "../../assets/img/portfolio/profile.jpeg";
+import CarouselRender from "../Carousel";
 
 function About() {
   const [links] = useState([
@@ -50,6 +51,10 @@ function About() {
           </div>
         </div>
       </header>
+      <div className="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center m-5 text-center">
+      <h2 className="mb-5">Projects Carousel</h2>
+        <CarouselRender />
+      </div>
     </React.Fragment>
   );
 }
