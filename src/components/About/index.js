@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 import ProfileImg from "../../assets/img/portfolio/profile.jpeg";
+import Skills from "../../containers/skills/Skills";
 import CarouselRender from "../Carousel";
 
 function About() {
@@ -36,6 +37,7 @@ function About() {
                 outstanding projects. I love sharing knowledge and learn, my
                 goal is to help other developers!
               </p>
+              <p className="text-white-75 mb-5">Get in touch via email: derimargray@gmail.com</p>
               {github.map((github) => (
                 <a
                   className="btn btn-primary btn-xl"
@@ -52,7 +54,10 @@ function About() {
         </div>
       </header>
       <div className="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center m-5 text-center">
-      <h2 className="mb-5">Projects Carousel</h2>
+        <Skills />
+      </div>
+      <div className="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center m-5 text-center">
+        <h2 className="mb-5">Projects Carousel</h2>
         <CarouselRender />
       </div>
     </React.Fragment>

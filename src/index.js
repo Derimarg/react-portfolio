@@ -1,15 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BaseProvider, LightTheme } from "baseui";
+import { Provider as StyletronProvider } from "styletron-react";
+import { Client as Styletron } from "styletron-engine-atomic";
 import "./index.css";
 import "../src/scripts.js";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import * as serviceWorker from "./serviceWorker";
 
+const engine = new Styletron();
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <StyletronProvider value={engine}>
+    <BaseProvider theme={LightTheme}>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </BaseProvider>
+  </StyletronProvider>,
   document.getElementById("root")
 );
 
