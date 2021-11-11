@@ -102,15 +102,18 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-#footer-area{
-  -webkit-box-shadow: 0px -4px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px -4px 5px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px -4px 5px 0px rgba(0,0,0,0.75);
-  }
+#footer-area {
+  -webkit-box-shadow: 0px -4px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -4px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px -4px 5px 0px rgba(0, 0, 0, 0.75);
+}
 
-.nav-colored { background-color:#000; }
-.nav-transparent { background-color:transparent;}
-
+.nav-colored {
+  background-color: #000;
+}
+.nav-transparent {
+  background-color: transparent;
+}
 
 .p-info {
   background: rgba(255, 255, 255, 0.3);
@@ -282,6 +285,7 @@ li {
   justify-content: center;
   align-items: center;
 }
+
 .portfolio .portfolio-wrap .portfolio-info::before {
   display: block;
   content: "";
@@ -334,6 +338,36 @@ li {
   font-size: 28px;
   display: inline-block;
   transition: 0.3s;
+}
+
+.portfolio-links a {
+  text-align: center;
+  color: #45505b;
+  margin: 0 2px;
+  padding: 5px;
+  font-size: 28px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.portfolio-links a span {
+  font-size: 20px;
+  padding-left: 5px;
+  font-weight: normal;
+}
+
+.portfolio-links h6 {
+  overflow-wrap: break-word;
+  font-size: 12px;
+  color: #45505b;
+}
+
+.portfolio-links a:hover {
+  color: #148af9;
+}
+
+a {
+  text-decoration: none !important;
 }
 .portfolio .portfolio-wrap .portfolio-links a:hover {
   color: #148af9;
@@ -8063,6 +8097,10 @@ fieldset:disabled .btn {
   margin-bottom: 3rem !important;
 }
 
+.mb-0-5 {
+  margin-bottom: 0.5rem !important;
+}
+
 .mb-auto {
   margin-bottom: auto !important;
 }
@@ -8108,7 +8146,7 @@ fieldset:disabled .btn {
 }
 
 .p-3 {
-  padding: 1rem !important;
+  padding: 0.3rem !important;
 }
 
 .p-4 {
@@ -12000,8 +12038,7 @@ body {
 }
 
 @media (min-width: 576px) {
-  
-   /* .fixed-top {
+  /* .fixed-top {
     position: relative; 
    }   */
 }
@@ -12075,11 +12112,11 @@ hr.divider-light {
     /* color: #fff; */
     color: #0d6efd;
   }
-   #mainNav .navbar-nav .nav-item .nav-link {
+  #mainNav .navbar-nav .nav-item .nav-link {
     color: rgba(255, 255, 255, 0.7);
 
     padding: 0 1rem;
-  } 
+  }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
     /* color: #fff; */
     color: #0d6efd;
