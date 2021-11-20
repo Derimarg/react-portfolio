@@ -1,6 +1,18 @@
 var data = [
   {
     id: "1",
+    name: "code-command",
+    filter: "app",
+    description:
+      "As a web developer, I want to continue learning through online courses so that I can get a promotion / better job.",
+    technologies: "React/Styled-components/Grapghql",
+    demo: "https://code-command-team.herokuapp.com/",
+    demoDesc: "Live Demo",
+    source: "https://github.com/Derimarg/code-command",
+    sourceDesc: "Source",
+  },
+  {
+    id: "2",
     name: "forge-project",
     filter: "web",
     description:
@@ -12,17 +24,6 @@ var data = [
     source: "https://github.com/Derimarg/Forge",
     sourceDesc: "Source",
   },
-  // {
-  //   id: "2",
-  //   name: "git-it-done",
-  //   filter: "card",
-  //   description: "",
-  //   technologies: "HTML/Bootstrap/JavaScript",
-  //   demo: "https://derimarg.github.io/git-it-done/",
-  //   demoDesc: "Live Demo",
-  //   source: "https://github.com/Derimarg/git-it-done",
-  //   sourceDesc: "Source",
-  // },
   {
     id: "3",
     name: "run-buddy",
@@ -47,20 +48,8 @@ var data = [
     source: "https://github.com/Derimarg/work-day-scheduler",
     sourceDesc: "Source",
   },
-
-  // {
-  //   id: "5",
-  //   name: "just-tech-news",
-  //   filter: "card",
-  //   description: "",
-  //   technologies: "Node/MySQL/Sequalize",
-  //   demo: "https://just-tech-news-dapp.herokuapp.com/",
-  //   demoDesc: "Live Demo",
-  //   source: "https://github.com/Derimarg/just-tech-news",
-  //   sourceDesc: "Source",
-  // },
   {
-    id: "6",
+    id: "5",
     name: "note-taker",
     filter: "app",
     description:
@@ -72,7 +61,7 @@ var data = [
     sourceDesc: "Source",
   },
   {
-    id: "7",
+    id: "6",
     name: "taskmaster-pro",
     filter: "web",
     description: "To Do app that allows to organized tasks.",
@@ -84,7 +73,7 @@ var data = [
   },
 
   {
-    id: "8",
+    id: "7",
     name: "weather-dashboard",
     filter: "app",
     description:
@@ -96,7 +85,7 @@ var data = [
     sourceDesc: "Source",
   },
   {
-    id: "9",
+    id: "8",
     name: "tech-blog",
     filter: "card",
     description:
@@ -108,7 +97,7 @@ var data = [
     sourceDesc: "Source",
   },
   {
-    id: "10",
+    id: "9",
     name: "password-generator",
     filter: "app",
     description:
