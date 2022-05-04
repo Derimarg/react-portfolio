@@ -50,7 +50,7 @@ function Contact() {
     emailjs
       .sendForm(
         "service_ztht0tl",
-        "template_bebrtdg",
+        "template_636kp3f",
         form.current,
         "user_ZqoXtIt7uzOc1O05qKbej"
       )

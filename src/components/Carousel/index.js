@@ -6,7 +6,7 @@ function CarouselRender() {
   const [projects] = useState(ProjectsData);
 
   return (
-    <div style={{ display: "block", width: 700, padding: 10 }} className="shadow-lg">
+    <div style={{ display: "block", width: 700, padding: 0 }} className="shadow-lg">
       <Carousel variant="dark">
         {projects.map((project) => (
           <Carousel.Item interval={3500} key={project.id}>

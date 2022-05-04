@@ -7,7 +7,7 @@ function Gallery({ project }) {
   return (
 
     <div className={`col-lg-4 col-md-6 portfolio-item filter-${filter}`}>
-      <div className="portfolio-wrap shadow-lg p-3 mb-5 bg-white" key={id}>
+      <div className="portfolio-wrap shadow-lg mb-5 bg-white" key={id}>
         <img
           src={require(`../../assets/img/portfolio/${name}.jpg`).default}
           className="img-fluid"

@@ -1,6 +1,22 @@
 var data = [
   {
     id: "1",
+    name: "nft-marketplace",
+    filter: "web",
+    description: "JavaScript/React/React-Native",
+    link: "https://lucky-tooth-1581.on.fleek.co/",
+    repo: "https://github.com/Derimarg/nft_marketplace_site",
+  },
+  {
+    id: "2",
+    name: "code-command",
+    filter: "web",
+    description: "React/Heroku/MongoDB",
+    link: "https://lucky-tooth-1581.on.fleek.co/",
+    repo: "https://github.com/Derimarg/nft_marketplace_site",
+  },
+  {
+    id: "3",
     name: "forge-project",
     filter: "web",
     description: "HTML/CSS/JS/Node/Express/MySQL/Handlebars",
@@ -8,7 +24,7 @@ var data = [
     repo: "https://github.com/Derimarg/Forge",
   },
   {
-    id: "2",
+    id: "4",
     name: "git-it-done",
     filter: "card",
     description: "HTML/Bootstrap/JavaScript",
@@ -16,7 +32,7 @@ var data = [
     repo: "https://github.com/Derimarg/git-it-done",
   },
   {
-    id: "3",
+    id: "5",
     name: "work-day-scheduler",
     filter: "app",
     description: "HTML/CSS/JavaScript",
@@ -24,7 +40,7 @@ var data = [
     repo: "https://github.com/Derimarg/work-day-scheduler",
   },
   {
-    id: "4",
+    id: "6",
     name: "run-buddy",
     filter: "web",
     description: "HTML/CSS",
@@ -32,7 +48,7 @@ var data = [
     repo: "https://github.com/Derimarg/run-buddy",
   },
   {
-    id: "5",
+    id: "7",
     name: "just-tech-news",
     filter: "card",
     description: "Node/MySQL/Sequalize",
@@ -40,7 +56,7 @@ var data = [
     repo: "https://github.com/Derimarg/just-tech-news",
   },
   {
-    id: "6",
+    id: "8",
     name: "note-taker",
     filter: "app",
     description: "Node/Express/Bootstrap",
@@ -48,7 +64,7 @@ var data = [
     repo: "https://github.com/Derimarg/note-taker",
   },
   {
-    id: "7",
+    id: "9",
     name: "taskmaster-pro",
     filter: "web",
     description: "HTML/CSS/JavaScript",
@@ -57,7 +73,7 @@ var data = [
   },
 
   {
-    id: "8",
+    id: "10",
     name: "weather-dashboard",
     filter: "app",
     description: "JavaScript/API/Bootstrap",
@@ -65,7 +81,7 @@ var data = [
     repo: "https://github.com/Derimarg/weather-dashboard",
   },
   {
-    id: "9",
+    id: "11",
     name: "tech-blog",
     filter: "card",
     description: "Node/MySQL/Sequalize",
@@ -73,7 +89,7 @@ var data = [
     repo: "https://github.com/Derimarg/tech-blog",
   },
   {
-    id: "10",
+    id: "12",
     name: "password-generator",
     filter: "app",
     description: "HTML/CSS/JavaScript",
