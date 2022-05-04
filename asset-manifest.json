@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.ab0c2389.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.85d3d1f6.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.85d3d1f6.chunk.js.map",
-    "runtime-main.js": "/react-portfolio/static/js/runtime-main.e43e5634.js",
-    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.e43e5634.js.map",
-    "static/js/2.fbfeaa84.chunk.js": "/react-portfolio/static/js/2.fbfeaa84.chunk.js",
-    "static/js/2.fbfeaa84.chunk.js.map": "/react-portfolio/static/js/2.fbfeaa84.chunk.js.map",
-    "static/js/3.24a8d2e6.chunk.js": "/react-portfolio/static/js/3.24a8d2e6.chunk.js",
-    "static/js/3.24a8d2e6.chunk.js.map": "/react-portfolio/static/js/3.24a8d2e6.chunk.js.map",
+    "main.js": "/react-portfolio/static/js/main.c2e35674.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.c2e35674.chunk.js.map",
+    "runtime-main.js": "/react-portfolio/static/js/runtime-main.58a37e6d.js",
+    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.58a37e6d.js.map",
+    "static/js/2.58b404be.chunk.js": "/react-portfolio/static/js/2.58b404be.chunk.js",
+    "static/js/2.58b404be.chunk.js.map": "/react-portfolio/static/js/2.58b404be.chunk.js.map",
+    "static/js/3.ea7fe1c7.chunk.js": "/react-portfolio/static/js/3.ea7fe1c7.chunk.js",
+    "static/js/3.ea7fe1c7.chunk.js.map": "/react-portfolio/static/js/3.ea7fe1c7.chunk.js.map",
     "index.html": "/react-portfolio/index.html",
     "static/css/main.ab0c2389.chunk.css.map": "/react-portfolio/static/css/main.ab0c2389.chunk.css.map",
-    "static/js/2.fbfeaa84.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.fbfeaa84.chunk.js.LICENSE.txt",
+    "static/js/2.58b404be.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.58b404be.chunk.js.LICENSE.txt",
     "static/media/index.css": "/react-portfolio/static/media/bg-masthead.f16c2ada.jpg",
-    "static/media/code-command.jpg": "/react-portfolio/static/media/code-command.b03a60c0.jpg",
+    "static/media/code-command.jpg": "/react-portfolio/static/media/code-command.fa6b84ef.jpg",
     "static/media/dark.jpg": "/react-portfolio/static/media/dark.14949826.jpg",
     "static/media/forge-project.jpg": "/react-portfolio/static/media/forge-project.f6a883ed.jpg",
     "static/media/gallery.jpg": "/react-portfolio/static/media/gallery.b96861fe.jpg",
@@ -23,6 +23,7 @@
     "static/media/hub.jpg": "/react-portfolio/static/media/hub.f70d5ebe.jpg",
     "static/media/just-tech-news.jpg": "/react-portfolio/static/media/just-tech-news.c1e81afe.jpg",
     "static/media/led.jpg": "/react-portfolio/static/media/led.ff514043.jpg",
+    "static/media/nft-marketplace.jpg": "/react-portfolio/static/media/nft-marketplace.93669f15.jpg",
     "static/media/note-taker.jpg": "/react-portfolio/static/media/note-taker.aeb39690.jpg",
     "static/media/password-generator.jpg": "/react-portfolio/static/media/password-generator.0517f995.jpg",
     "static/media/pexels-neo.jpg": "/react-portfolio/static/media/pexels-neo.026b6637.jpg",
@@ -37,9 +38,9 @@
     "static/media/zoo-keepr.jpg": "/react-portfolio/static/media/zoo-keepr.10eeafbe.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e43e5634.js",
-    "static/js/2.fbfeaa84.chunk.js",
+    "static/js/runtime-main.58a37e6d.js",
+    "static/js/2.58b404be.chunk.js",
     "static/css/main.ab0c2389.chunk.css",
-    "static/js/main.85d3d1f6.chunk.js"
+    "static/js/main.c2e35674.chunk.js"
   ]
 }
