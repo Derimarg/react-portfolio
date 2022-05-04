@@ -1,31 +1,46 @@
 var data = [
   {
     id: "1",
-    name: "code-command",
-    filter: "app",
-    description:
-      "As a web developer, I want to continue learning through online courses so that I can get a promotion / better job.",
-    technologies: "React/Styled-components/Grapghql",
-    demo: "https://code-command-team.herokuapp.com/",
-    demoDesc: "Live Demo",
-    source: "https://github.com/Derimarg/code-command",
-    sourceDesc: "Source",
+    name: "nft-marketplace",
+    filter: "web",
+    description: "JavaScript/React/React-Native",
+    link: "https://lucky-tooth-1581.on.fleek.co/",
+    repo: "https://github.com/Derimarg/nft_marketplace_site",
   },
   {
     id: "2",
-    name: "forge-project",
+    name: "code-command",
     filter: "web",
-    description:
-      "Social media for Bootcamp students so we can ask/answer coding questions and share experiences.",
-    technologies:
-      "Node/MySQL/Sequelize,Dotenv/Heroku/Bcrypt/Express/Handlebars/AOS/CSS/JS",
-    demo: "https://forge-team.herokuapp.com/splash",
-    demoDesc: "Live Demo",
-    source: "https://github.com/Derimarg/Forge",
-    sourceDesc: "Source",
+    description: "React/Heroku/MongoDB",
+    link: "https://lucky-tooth-1581.on.fleek.co/",
+    repo: "https://github.com/Derimarg/nft_marketplace_site",
   },
   {
     id: "3",
+    name: "forge-project",
+    filter: "web",
+    description: "HTML/CSS/JS/Node/Express/MySQL/Handlebars",
+    link: "https://forge-team.herokuapp.com/splash",
+    repo: "https://github.com/Derimarg/Forge",
+  },
+  {
+    id: "4",
+    name: "git-it-done",
+    filter: "card",
+    description: "HTML/Bootstrap/JavaScript",
+    link: "https://derimarg.github.io/git-it-done/",
+    repo: "https://github.com/Derimarg/git-it-done",
+  },
+  {
+    id: "5",
+    name: "work-day-scheduler",
+    filter: "app",
+    description: "HTML/CSS/JavaScript",
+    link: "https://derimarg.github.io/work-day-scheduler/",
+    repo: "https://github.com/Derimarg/work-day-scheduler",
+  },
+  {
+    id: "6",
     name: "run-buddy",
     filter: "web",
     description:
@@ -37,19 +52,15 @@ var data = [
     sourceDesc: "Source",
   },
   {
-    id: "4",
-    name: "work-day-scheduler",
-    filter: "app",
-    description:
-      "A day scheluder application that allows a user to save events and organize their day.",
-    technologies: "HTML/CSS/JS/JQuery/Font Awesome/Bootstrap",
-    demo: "https://derimarg.github.io/work-day-scheduler/",
-    demoDesc: "Live Demo",
-    source: "https://github.com/Derimarg/work-day-scheduler",
-    sourceDesc: "Source",
+    id: "7",
+    name: "just-tech-news",
+    filter: "card",
+    description: "Node/MySQL/Sequalize",
+    link: "https://just-tech-news-dapp.herokuapp.com/",
+    repo: "https://github.com/Derimarg/just-tech-news",
   },
   {
-    id: "5",
+    id: "8",
     name: "note-taker",
     filter: "app",
     description:
@@ -61,7 +72,7 @@ var data = [
     sourceDesc: "Source",
   },
   {
-    id: "6",
+    id: "9",
     name: "taskmaster-pro",
     filter: "web",
     description: "To Do app that allows to organized tasks.",
@@ -73,7 +84,7 @@ var data = [
   },
 
   {
-    id: "7",
+    id: "10",
     name: "weather-dashboard",
     filter: "app",
     description:
@@ -85,7 +96,7 @@ var data = [
     sourceDesc: "Source",
   },
   {
-    id: "8",
+    id: "11",
     name: "tech-blog",
     filter: "card",
     description:
@@ -97,7 +108,7 @@ var data = [
     sourceDesc: "Source",
   },
   {
-    id: "9",
+    id: "12",
     name: "password-generator",
     filter: "app",
     description:
