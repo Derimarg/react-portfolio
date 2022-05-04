@@ -17,8 +17,7 @@ function Proficiencies() {
                 </em>
               </p>
               <ul>
-                <li>3527 W 100TH ST, Leawood, KS, 66206</li>
-                <li>(816) 328-5734</li>
+                <li>(816)-328-5734</li>
                 <li>derimargray@gmail.com</li>
               </ul>
             </div>
@@ -26,7 +25,7 @@ function Proficiencies() {
             <h3 className="resume-title">Education</h3>
             <div className="resume-item">
               <h4>Full Stack Developer Bootcamp KU</h4>
-              <h5>2021 - present</h5>
+              <h5>2021</h5>
               <p>
                 <em>The University of Kansas</em>
               </p>
@@ -42,7 +41,7 @@ function Proficiencies() {
             </div>
             <div className="resume-item">
               <h4>Bachelor in Mechanical Engineering</h4>
-              <h5>2012 - 2016</h5>
+              <h5>2012 - 2017</h5>
               <p>
                 <em>Universidad Veracruzana, Veracruz, MX.</em>
               </p>
@@ -55,8 +54,22 @@ function Proficiencies() {
           <div className="col-lg-6">
             <h3 className="resume-title">Professional Experience</h3>
             <div className="resume-item">
-              <h4>Jr. Software Developer</h4>
-              <h5>2021 - Present</h5>
+              <h4>Full Stack Developer</h4>
+              <h5>2022 - present</h5>
+              <p>
+                <em>Harvard in Tech Seattle., Seattle, WA </em>
+              </p>
+              <ul>
+                <li>Design and creation of scalable software.</li>
+                <li>Writing clean, functional code on the front- and back-end.</li>
+                <li>Testing and fixing bugs or other coding issues.</li>
+                <li>Understand end to end flow of the website and system in general.</li>
+                <li>Solve technical challenges of the team.</li>
+              </ul>
+            </div>
+            <div className="resume-item">
+              <h4>Software Developer</h4>
+              <h5>2021 - 2022</h5>
               <p>
                 <em>Custom Wood Products Inc., Saint Marys, KS </em>
               </p>
@@ -88,7 +101,7 @@ function Proficiencies() {
                 <li>Express.js, SQL, Object Relational Mapping (ORM) Skills</li>
                 <li>Model-View-Controller (MVC) Skills</li>
                 <li>NoSQL, Progressive Web Applications (PWA) Skills</li>
-                <li>React, MERN, State Skills</li>
+                <li>React.js, React Native, Next.js, MERN State Skills</li>
               </ul>
             </div>
           </div>
