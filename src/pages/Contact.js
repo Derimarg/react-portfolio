@@ -1,11 +1,11 @@
 import React, { useState, useRef } from "react";
 import emailjs from "emailjs-com";
-import { capitalizeFirstLetter, validateEmail } from "../../utils/helpers";
+import { capitalizeFirstLetter, validateEmail } from "../utils/helpers";
 
 function Contact() {
   const [links] = useState([
     {
-      link: "contact",
+      link: "Let's Get In Touch!",
     },
   ]);
 
@@ -80,13 +80,6 @@ function Contact() {
               {capitalizeFirstLetter(currentSection.link)}
               <hr className="divider" />
             </h1>
-            <div className="page-skill bg-dark" id="contact"></div>
-            <h3
-              className="mt-0 text-muted font-weight-bold"
-              data-testid="h3tag"
-            >
-              Let's Get In Touch!
-            </h3>
             <hr />
           </div>
           <hr />
@@ -155,7 +148,7 @@ function Contact() {
               <div className="d-grid">
                 <button
                   data-testid="button"
-                  className="btn btn-primary btn-xl"
+                  className="btn btn-secondary btn-xl"
                   id="submitButton"
                   type="submit"
                 >

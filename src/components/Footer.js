@@ -13,11 +13,7 @@ function Footer() {
     {
       name: "fab fa-google",
       url: "mailto:derimargray@gmail.com"
-    },
-    {
-      name: "fab fa-stack-overflow",
-      url: "https://stackoverflow.com/users/15126049/derimar-gray"
-    },
+    }
   ];
 
   return (
@@ -36,7 +32,7 @@ function Footer() {
           ))}
         </div>
         <div className="small text-center text-muted">
-          &copy; {new Date().getFullYear()} - Derimar Gray email: 
+          &copy; {new Date().getFullYear()} - Derimar Gray
         </div>
         <div className="small text-center text-muted">derimargray@gmail.com</div>
       </div>
