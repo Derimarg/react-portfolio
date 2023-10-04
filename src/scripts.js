@@ -1,65 +1,39 @@
+// Function to handle navbar shrink
+function navbarShrink() {
+  const navbarCollapsible = document.querySelector("#mainNav");
+  if (!navbarCollapsible) {
+    return;
+  }
+  navbarCollapsible.classList.toggle("navbar-shrink", window.scrollY !== 0);
+}
 
-window.addEventListener("DOMContentLoaded", (event) => {
+// Initial call to navbarShrink
+navbarShrink();
 
-  // Navbar shrink function
-  var navbarShrink = function () {
-    const navbarCollapsible = document.body.querySelector("#mainNav");
-    if (!navbarCollapsible) {
-      return;
+// Add scroll event listener to shrink navbar
+document.addEventListener("scroll", navbarShrink);
+
+// Collapse responsive navbar when toggler is visible
+const navbarToggler = document.querySelector(".navbar-toggler");
+const responsiveNavItems = Array.from(
+  document.querySelectorAll("#navbarResponsive .nav-link")
+);
+
+responsiveNavItems.forEach((responsiveNavItem) => {
+  responsiveNavItem.addEventListener("click", () => {
+    if (window.getComputedStyle(navbarToggler).display !== "none") {
+      navbarToggler.click();
     }
-    if (window.scrollY === 0) {
-      navbarCollapsible.classList.remove("navbar-shrink");
-    } else {
-      navbarCollapsible.classList.add("navbar-shrink");
-    }
-  };
-
-  // Shrink the navbar
-  navbarShrink();
-
-  // Shrink the navbar when page is scrolled
-  document.addEventListener("scroll", navbarShrink);
-
-  // Activate Bootstrap scrollspy on the main nav element
-  // const mainNav = document.body.querySelector("#mainNav");
-  // if (mainNav) {
-  //   new bootstrap.ScrollSpy(document.body, {
-  //     target: "#mainNav",
-  //     offset: 74,
-  //   });
-  // }
-
-  // Collapse responsive navbar when toggler is visible
-  const navbarToggler = document.body.querySelector(".navbar-toggler");
-  const responsiveNavItems = [].slice.call(
-    document.querySelectorAll("#navbarResponsive .nav-link")
-  );
-
-  // eslint-disable-next-line
-   responsiveNavItems.map(function (responsiveNavItem) {
-      responsiveNavItem.addEventListener("click", () => {
-        if (window.getComputedStyle(navbarToggler).display !== "none") {
-          navbarToggler.click();
-        }
-
-      });
-    });
-
-  // Activate SimpleLightbox plugin for portfolio items
-
-  // new SimpleLightbox({
-  //   elements: "#portfolio a.portfolio-box",
-  // });
-
-  var myNav = document.getElementById("mainNav");
-  window.onscroll = function () {
-    // "use strict";
-    if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200 ) {
-      myNav.classList.add("nav-colored");
-      myNav.classList.remove("nav-transparent");
-    } else {
-      myNav.classList.add("nav-transparent");
-      myNav.classList.remove("nav-colored");
-    }
-  };
+  });
 });
+
+// Function to handle navbar color change on scroll
+function handleNavbarColorChange() {
+  const myNav = document.getElementById("mainNav");
+  const isScrolled = document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200;
+  myNav.classList.toggle("nav-colored", isScrolled);
+  myNav.classList.toggle("nav-transparent", !isScrolled);
+}
+
+// Add scroll event listener to change navbar color
+window.addEventListener("scroll", handleNavbarColorChange);

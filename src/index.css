@@ -136,7 +136,7 @@ body {
 }
 
 .icons:hover {
-  color: var(--bs-blue);
+  color: var(--bs-gray-600);
 }
 
 .footer {
@@ -251,7 +251,7 @@ li {
   margin-right: 0;
 }
 .portfolio .portfolio-wrap {
-  transition: 0.3s;
+  transition: 0.5s;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -260,7 +260,7 @@ li {
 .portfolio .portfolio-wrap::before {
   content: "";
   /* background: rgba(255, 255, 255, 0.7); */
-  background: rgba(137, 196, 244, 0.4);
+  background: rgba(154, 156, 157, 0.4);
   position: absolute;
   left: 30px;
   right: 30px;
@@ -296,8 +296,8 @@ li {
   left: 35px;
   /* border-top: 3px solid #d7dce1;
   border-left: 3px solid #d7dce1; */
-  border-top: 3px solid #0563bb;
-  border-left: 3px solid #0563bb;
+  border-top: 3px solid #464f57;
+  border-left: 3px solid #464f57;
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
@@ -311,8 +311,8 @@ li {
   right: 35px;
   /* border-bottom: 3px solid #d7dce1;
   border-right: 3px solid #d7dce1; */
-  border-bottom: 3px solid #0563bb;
-  border-right: 3px solid #0563bb;
+  border-bottom: 3px solid #464f57;
+  border-right: 3px solid #464f57;
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
@@ -2901,8 +2901,8 @@ textarea.form-control-lg {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  -webkit-print-color-adjust: exact;
-  color-adjust: exact;
+  -webkit-print-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 .form-check-input[type="checkbox"] {
   border-radius: 0.25em;
@@ -3231,7 +3231,9 @@ textarea.form-control-lg {
   border-bottom-right-radius: 0;
 }
 .input-group
-  > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(
+    .valid-feedback
+  ):not(.invalid-tooltip):not(.invalid-feedback) {
   margin-left: -1px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -8576,12 +8578,12 @@ fieldset:disabled .btn {
 
 .bg-dark {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #111 !important;
 }
 
 .bg-black {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #000 !important;
 }
 
 .bg-white {
@@ -12062,9 +12064,9 @@ body {
 
 hr.divider {
   height: 0.2rem;
-  max-width: 3.25rem;
+  max-width: 12.25rem;
   margin: 1.5rem auto;
-  background-color: var(--bs-blue);
+  background-color: var(--bs-gray);
   opacity: 1;
 }
 
@@ -12110,7 +12112,7 @@ hr.divider-light {
   }
   #mainNav .navbar-brand:hover {
     /* color: #fff; */
-    color: #0d6efd;
+    color: gray;
   }
   #mainNav .navbar-nav .nav-item .nav-link {
     color: rgba(255, 255, 255, 0.7);
@@ -12119,26 +12121,27 @@ hr.divider-light {
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
     /* color: #fff; */
-    color: #0d6efd;
+    /* color: #0d6efd; */
+    color: gray
   }
   #mainNav .navbar-nav .nav-item:last-child .nav-link {
     padding-right: 0;
   }
   #mainNav.navbar-shrink {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    background-color: #fff;
+    background-color: #f5f5f5;
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #212529;
   }
   #mainNav.navbar-shrink .navbar-brand:hover {
-    color: var(--bs-new-primary);
+    color: var(--bs-gray);
   }
   #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
     color: #212529;
   }
   #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
-    color: var(--bs-new-primary);
+    color: gray;
   }
 }
 
@@ -12147,10 +12150,13 @@ header.masthead {
   padding-bottom: calc(10rem - 4.5rem);
   background: linear-gradient(
       to bottom,
-      rgba(92, 77, 66, 0.8) 0%,
-      rgba(92, 77, 66, 0.8) 100%
+      rgba(0, 0, 0, 0.12) 0%,
+      rgba(0, 0, 0, 0.12) 100%
+      /* rgba(92, 77, 66, 0.8) 0%,
+      rgba(92, 77, 66, 0.8) 100% */
     ),
-    url("./assets/img/bg-masthead.jpg");
+    /* url("./assets/img/bg-masthead.jpg"); */
+    url("./assets/img/bg-black.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;

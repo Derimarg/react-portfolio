@@ -1,6 +1,5 @@
-var data = [
+const data = [
   {
-    id: "1",
     name: "nft-marketplace",
     filter: "web",
     description: "JavaScript/React/React-Native",
@@ -8,15 +7,13 @@ var data = [
     repo: "https://github.com/Derimarg/nft_marketplace_site",
   },
   {
-    id: "2",
     name: "code-command",
     filter: "web",
     description: "React/Heroku/MongoDB",
-    link: "https://lucky-tooth-1581.on.fleek.co/",
-    repo: "https://github.com/Derimarg/nft_marketplace_site",
+    link: "https://code-command-team.herokuapp.com/",
+    repo: "https://github.com/Derimarg/code-command",
   },
   {
-    id: "3",
     name: "forge-project",
     filter: "web",
     description: "HTML/CSS/JS/Node/Express/MySQL/Handlebars",
@@ -24,7 +21,6 @@ var data = [
     repo: "https://github.com/Derimarg/Forge",
   },
   {
-    id: "4",
     name: "git-it-done",
     filter: "card",
     description: "HTML/Bootstrap/JavaScript",
@@ -32,7 +28,6 @@ var data = [
     repo: "https://github.com/Derimarg/git-it-done",
   },
   {
-    id: "5",
     name: "work-day-scheduler",
     filter: "app",
     description: "HTML/CSS/JavaScript",
@@ -40,7 +35,6 @@ var data = [
     repo: "https://github.com/Derimarg/work-day-scheduler",
   },
   {
-    id: "6",
     name: "run-buddy",
     filter: "web",
     description:
@@ -52,7 +46,6 @@ var data = [
     sourceDesc: "Source",
   },
   {
-    id: "7",
     name: "just-tech-news",
     filter: "card",
     description: "Node/MySQL/Sequalize",
@@ -60,19 +53,13 @@ var data = [
     repo: "https://github.com/Derimarg/just-tech-news",
   },
   {
-    id: "8",
     name: "note-taker",
     filter: "app",
-    description:
-      "Used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.",
-    technologies: "Node/Express/Bootstrap/FontAwesome/CSS/JS/HTML",
-    demo: "my-notes-taker.herokuapp.com/",
-    demoDesc: "Live Demo",
-    source: "https://github.com/Derimarg/note-taker",
-    sourceDesc: "Source",
+    description: "Node/Express/Bootstrap",
+    link: "https://my-notes-taker.herokuapp.com/",
+    repo: "https://github.com/Derimarg/note-taker",
   },
   {
-    id: "9",
     name: "taskmaster-pro",
     filter: "web",
     description: "To Do app that allows to organized tasks.",
@@ -82,9 +69,7 @@ var data = [
     source: "https://github.com/Derimarg/taskmaster-pro",
     sourceDesc: "Source",
   },
-
   {
-    id: "10",
     name: "weather-dashboard",
     filter: "app",
     description:
@@ -96,7 +81,6 @@ var data = [
     sourceDesc: "Source",
   },
   {
-    id: "11",
     name: "tech-blog",
     filter: "card",
     description:
@@ -108,7 +92,6 @@ var data = [
     sourceDesc: "Source",
   },
   {
-    id: "12",
     name: "password-generator",
     filter: "app",
     description:

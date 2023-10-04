@@ -1,5 +1,5 @@
 import React from "react";
-import { removeHyphensAndCapitalize } from "../../utils/helpers";
+import { removeHyphensAndCapitalize } from "../utils/helpers";
 
 function Gallery({ project }) {
   const {
@@ -15,7 +15,7 @@ function Gallery({ project }) {
     <div className={`col-lg-4 col-md-6 portfolio-item filter-${filter}`}>
       <div className="portfolio-wrap shadow-lg mb-5 bg-white" key={id}>
         <img
-          src={require(`../../assets/img/portfolio/${name}.jpg`).default}
+          src={require(`../assets/img/portfolio/${name}.jpg`)}
           className="img-fluid"
           alt={removeHyphensAndCapitalize(name)}
         />
