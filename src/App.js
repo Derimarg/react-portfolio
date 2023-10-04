@@ -1,12 +1,11 @@
-import React from "react";
-import Header from "./components/Header";
+import AppRouter from './AppRouter';
 import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
-      <Header />
-      <Footer />
+    <div >
+      <AppRouter />
+      <Footer/>
     </div>
   );
 }
