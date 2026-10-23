@@ -8,7 +8,7 @@ function Footer() {
     },
     {
       name: "fab fa-linkedin",
-      url: "https://www.linkedin.com/in/derimar-gray/"
+      url: "https://www.linkedin.com/in/derimargray/?isSelfProfile=true"
     },
     {
       name: "fab fa-google",

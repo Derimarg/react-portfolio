@@ -6,7 +6,7 @@ import ProfileImg from "../assets/img/portfolio/profile.jpeg";
 const googleDrive = {
   icon: "fas fa-file-download",
   label: "drive",
-  url: "https://drive.google.com/uc?id=1xCnXczYrhN7538txiKxo0TFEhg9o-ntU&export=download",
+  url: "https://drive.google.com/file/d/1huIagVGZsjnd2MZfS6By_fo7CNxyPCEN/view?usp=sharing", // Updated to match your latest resume link
 };
 
 function Home() {
@@ -16,9 +16,7 @@ function Home() {
     },
   ]);
 
-
   const [currentSection] = useState(links[0]);
-
 
   return (
     <>
@@ -33,14 +31,14 @@ function Home() {
             </div>
             <div className="col-lg-8 align-self-baseline team-member">
               <img
-                className=" rounded-circle mt-5"
+                className="rounded-circle mt-5"
                 src={ProfileImg}
                 alt="Profile avatar"
               />
               <p className="text-white-75 mb-5">
-                I'm a dedicated Full Stack Developer who invests most of my time coding on a diverse range of projects. My enthusiasm lies in not only sharing knowledge but also in the perpetual growth of my own skill set. As a volunteer Full Stack developer with Harvard in Tech, I actively contribute to the community, extending my support and dedicating my time to create a positive impact in the developer community. In addition to my volunteer work, I also offer Tech Solutions freelance services, providing tailored solutions to meet various technological needs.
+                I'm a Multidisciplinary Engineer and Full Stack Developer holding a B.S. in Mechanical Engineering and currently pursuing dual B.S. degrees in Electrical & Computer Engineering and Computer Science at UMKC. I combine hardware logic, process automation, and software development to build solutions that positively impact people's lives. As a volunteer Full Stack developer with Harvard in Tech, I actively contribute to the developer community, alongside offering tailored technical freelance solutions.
               </p>
-              <p className="text-white-75 mb-5">Get in touch via email: derimargray@gmail.com</p>
+
               <a
                 className="btn btn-secondary btn-xl"
                 href={googleDrive.url}
@@ -58,4 +56,5 @@ function Home() {
     </>
   );
 }
+
 export default Home;
